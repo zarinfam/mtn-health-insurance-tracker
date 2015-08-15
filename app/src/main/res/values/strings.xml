@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MTN Health Insurance Tracker</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hello MTN!</string>
     <string name="action_settings">Settings</string>
+    <string name="test">Test</string>
 </resources>
