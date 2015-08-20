@@ -12,6 +12,7 @@ public class MainActivity extends ActionBarActivity {
 
     private TextView textViewTest;
     private String testHello = "Hello";
+    private String testHello1 = "Hello1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
