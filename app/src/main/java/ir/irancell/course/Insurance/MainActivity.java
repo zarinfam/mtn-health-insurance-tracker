@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 
     private TextView textViewTest;
-    private String test = "Hello";
+    private String testHello = "Hello";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
