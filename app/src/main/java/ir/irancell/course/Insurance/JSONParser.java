@@ -24,7 +24,7 @@ public class JSONParser {
             userAtuh= object.getBoolean("Value");
         } catch (JSONException e) {
             // TODO Auto-generated catch block
-            Log.d("JSONParser => parseUserAuth", e.getMessage());
+            Log.d("parseUserAuth", e.getMessage());
         }
 
         return userAtuh;
