@@ -121,19 +121,7 @@ public class RestAPI {
         return result;
     }
 
-    public JSONObject GetUserDetails(String userName) throws Exception {
-        JSONObject result = null;
-        JSONObject o = new JSONObject();
-        JSONObject p = new JSONObject();
-        o.put("interface","RestAPI");
-        o.put("method", "GetUserDetails");
-        p.put("userName",mapObject(userName));
-        o.put("parameters", p);
-        String s = o.toString();
-        String r = load(s);
-        result = new JSONObject(r);
-        return result;
-    }
+
 
     public JSONObject UserAuthentication(String userName,String passsword) throws Exception {
         JSONObject result = null;
@@ -150,17 +138,6 @@ public class RestAPI {
         return result;
     }
 
-    public JSONObject GetDepartmentDetails() throws Exception {
-        JSONObject result = null;
-        JSONObject o = new JSONObject();
-        JSONObject p = new JSONObject();
-        o.put("interface","RestAPI");
-        o.put("method", "GetDepartmentDetails");
-        o.put("parameters", p);
-        String s = o.toString();
-        String r = load(s);
-        result = new JSONObject(r);
-        return result;
-    }
+
 
 }
