@@ -22,9 +22,8 @@ import org.json.JSONArray;
  * Created by hp on 8/27/2015.
  */
 public class RestAPI {
-    private final String urlString ="http://tutecentral.somee.com/Handler1.ashx";
-    //"http://192.168.56.1/JSONWebAPI/Handler1.ashx"; // Genymotion AVD
-    //"http://10.0.2.2/JSONWebAPI/Handler1.ashx"; // Default ANDROID AVD //
+    private final String urlString ="http://localhost.com/Handler1.ashx";
+
 
 
     private static String convertStreamToUTF8String(InputStream stream) throws IOException {
