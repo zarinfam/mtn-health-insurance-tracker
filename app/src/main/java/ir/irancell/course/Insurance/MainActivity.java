@@ -27,6 +27,8 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+    private String testHello = "Hello";
+    private String testHello1 = "Hello1";
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
