@@ -7,7 +7,6 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
@@ -18,13 +17,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import org.json.JSONObject;
 import org.json.JSONArray;
-/**
- * Created by hp on 8/27/2015.
- */
+
 public class RestAPI {
-    private final String urlString ="http://localhost.com/Handler1.ashx";
 
 
+
+
+    //private final String urlString ="http://192.168.1.102:8011/Handler1.ashx";
+    private final String urlString ="http://212.16.70.50:8010/Handler1.ashx";
 
     private static String convertStreamToUTF8String(InputStream stream) throws IOException {
         String result = "";
@@ -103,22 +103,7 @@ public class RestAPI {
         return finalValue;
     }
 
-    public JSONObject CreateNewAccount(String firstName,String lastName,String userName,String password) throws Exception {
-        JSONObject result = null;
-        JSONObject o = new JSONObject();
-        JSONObject p = new JSONObject();
-        o.put("interface","RestAPI");
-        o.put("method", "CreateNewAccount");
-        p.put("firstName",mapObject(firstName));
-        p.put("lastName",mapObject(lastName));
-        p.put("userName",mapObject(userName));
-        p.put("password",mapObject(password));
-        o.put("parameters", p);
-        String s = o.toString();
-        String r = load(s);
-        result = new JSONObject(r);
-        return result;
-    }
+
 
 
 
@@ -129,11 +114,12 @@ public class RestAPI {
         o.put("interface","RestAPI");
         o.put("method", "UserAuthentication");
         p.put("userName",mapObject(userName));
-        p.put("passsword",mapObject(passsword));
+        p.put("password",mapObject(passsword));
         o.put("parameters", p);
-        String s = o.toString();
+        String s = p.toString();
         String r = load(s);
         result = new JSONObject(r);
+
         return result;
     }
 

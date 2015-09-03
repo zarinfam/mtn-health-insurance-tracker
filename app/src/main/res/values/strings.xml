@@ -5,8 +5,11 @@
     <string name="action_settings">Settings</string>
 
     <string-array name="ActionList_array">
-        <item>Upload A Medical Document</item>
-        <item>View paid Medical Documents</item>
+
+        <item>Add Request</item>
+        <item>Show Requests</item>
+        <item>Show Documents Details</item>
+        <item>Add Comment</item>
 
     </string-array>
     <string name="drawer_open">Open navigation drawer</string>
@@ -20,4 +23,6 @@
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_application_name">Health Insurance Tracking </string>
 </resources>
